@@ -1,0 +1,192 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+  }
+  
+  body {
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: 30px auto;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  header {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  h1 {
+    color: #555;
+    text-align: center;
+    font-size: 24px;
+    font-weight: normal;
+  }
+  
+  .todo-form {
+    padding: 20px;
+    border-bottom: 1px solid #e0e0e0;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-row {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .form-row .form-group {
+    flex: 1;
+  }
+  
+  label {
+    display: block;
+    color: #666;
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+  
+  input, select {
+    width: 100%;
+    padding: 8px 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+  }
+  
+  .buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  .btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  
+  .add-btn {
+    background-color: #444;
+    flex: 1;
+  }
+  
+  .delete-btn {
+    background-color: #f44336;
+    flex: 1;
+  }
+  
+  .plus, .trash {
+    margin-right: 5px;
+  }
+  
+  .task-list {
+    padding: 10px 20px;
+    min-height: 100px;
+  }
+  
+  .task-item {
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .task-item:last-child {
+    border-bottom: none;
+  }
+  
+  .task-checkbox {
+    margin-right: 15px;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+  }
+  
+  .task-details {
+    flex: 1;
+  }
+  
+  .task-description {
+    margin-bottom: 5px;
+    font-size: 16px;
+  }
+  
+  .task-date {
+    color: #888;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .task-category {
+    margin-left: auto;
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 12px;
+    color: white;
+  }
+  
+  .category-work {
+    background-color: #9c27b0;
+  }
+  
+  .category-school {
+    background-color: #ff9800;
+  }
+  
+  .category-personal {
+    background-color: #2196f3;
+  }
+  
+  .category-shopping {
+    background-color: #4caf50;
+  }
+  
+  .category-other {
+    background-color: #607d8b;
+  }
+  
+  .alert {
+    padding: 10px 15px;
+    margin: 10px 20px;
+    border-radius: 4px;
+    color: white;
+  }
+  
+  .alert.error {
+    background-color: #f44336;
+  }
+  
+  .alert.success {
+    background-color: #4CAF50;
+  }
+  
+  .loading {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+  }
+  
+  .no-tasks {
+    text-align: center;
+    padding: 20px;
+    color: #666;
+    font-style: italic;
+  }

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TODO App</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>TODO App</h1>
+    </header>
+    
+    <div class="todo-form">
+      <div class="form-group">
+        <label for="description">DESCRIPTION</label>
+        <input type="text" id="description" placeholder="What do you need to do?">
+      </div>
+      
+      <div class="form-row">
+        <div class="form-group">
+          <label for="category">CATEGORY</label>
+          <select id="category">
+            <option value="Personal">Personal</option>
+            <option value="Work">Work</option>
+            <option value="School">School</option>
+            <option value="Shopping">Shopping</option>
+            <option value="Other">Other</option>
+          </select>
+        </div>
+        
+        <div class="form-group">
+          <label for="dueDate">DUE DATE</label>
+          <input type="date" id="dueDate" placeholder="dd/mm/yyyy">
+        </div>
+      </div>
+      
+      <div class="buttons">
+        <button id="addTask" class="btn add-btn">
+          <span class="plus">+</span> ADD TASK
+        </button>
+        <button id="deleteTasks" class="btn delete-btn">
+          <span class="trash">🗑️</span> DELETE TASKS
+        </button>
+      </div>
+    </div>
+    
+    <div id="alert-container"></div>
+    
+    <div class="task-list">
+      <!-- Tasks will be dynamically added here -->
+      <div class="loading">Loading tasks...</div>
+    </div>
+  </div>
+  
+  <script src="./taskService.js"></script>
+  <script src="./ui.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
